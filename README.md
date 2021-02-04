@@ -20,7 +20,8 @@
 
 3. 변수를 수정하세요
 ```
-WORK_DIR="저장소가 위치한 곳"                         # WORK_DIR="${HOME}/auto_commit"
+WORK_DIR="auto_commit 저장소 위치"                         # WORK_DIR="${HOME}/auto_commit"
+WATCH_DIR="commit이 생성 되었는지 알고 싶은 저장소"	# WATCH_DIR="${HOME}/airbnb-clone"
 SINCE_AGO="현재로부터 몇 시간 전에 커밋 생성 되었는지?" # SINCE_AGO="12 hours ago"
 ```
 
