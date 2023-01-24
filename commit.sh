@@ -1,13 +1,13 @@
 #!/bin/bash
 
-WORK_DIR="${HOME}/auto_commit"
-WATCH_DIR="${HOME}/python-study"
+WORK_DIR="Desktop/auto_commit"
+WATCH_DIR="Desktop/STUDY/TodayILearn"
 SINCE_AGO="12 hours ago"
 
 cd ${WATCH_DIR}
 COMMIT=`git log --pretty=format:"%cd" --since="${SINCE_AGO}"`
 TODAY=`date "+%Y-%m-%d %I:%M %p"`
-MSG="💤 AUTO Commit for ${WATCH_DIR#*${HOME}/}"
+MSG="💤 Commit for TIL ${WATCH_DIR#*${HOME}/}"
 
 if [ "$COMMIT" = "" ]
 then
